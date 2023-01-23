@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn jQuery</title>
+</head>
+<body>
+    <h1>Learn JQuery Course </h1>
+    <div class="output">
+        <button id="my-btn">Click Me</button>
+        <p id="my-text">Hello</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="app8.js"></script>
+</body>
+</html>
+
+let counter = 0 ;
+$('#my-btn').click(function(){
+    counter++;
+    $('#my-text').text('Click : '+counter);
+    console.log(counter);
+})
